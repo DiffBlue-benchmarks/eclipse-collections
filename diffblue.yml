@@ -1,3 +1,2 @@
 language: java
-buildCmd: mvn install -DskipTests=true
-testCmd: mvn test
+buildCmd: mvn -e -X -Dmaven.test.skip=true install
